@@ -41,8 +41,8 @@ jobs:
       - name: Export Solution
         uses: microsoft/powerplatform-actions/export-solution@v0
         with:
-          environment-url: 'https://myenv.crm.dynamics.com'
-          user-name: 'me@myenv.onmicrosoft.com'
+          environment-url: 'https://orgcb87dfa8.crm5.dynamics.com'
+          user-name: 'hwko@hwvincioutlook.onmicrosoft.com'
           password-secret: ${{ secrets.MYPASSWORD }}
           solution-name: aSolution
           solution-output-file: 'aSolution.zip'
@@ -59,8 +59,8 @@ jobs:
       - name: Publish Solution
         uses: microsoft/powerplatform-actions/publish-solution@v0
         with:
-          environment-url: 'https://myenv.crm.dynamics.com'
-          user-name: 'me@myenv.onmicrosoft.com'
+          environment-url: 'https://orgcb87dfa8.crm5.dynamics.com'
+          user-name: 'hwko@hwvincioutlook.onmicrosoft.com'
           password-secret: ${{ secrets.MYPASSWORD }}
 
       - name: Prepare solution changes for check-in into source control
